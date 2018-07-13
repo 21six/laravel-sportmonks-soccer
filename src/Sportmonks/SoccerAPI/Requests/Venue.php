@@ -12,4 +12,9 @@ class Venue extends SoccerAPIClient {
         return $this->call('venues/' . $venueId);
     }
 
+    public function bySeasonId($seasonId)
+    {
+        return $this->call('venues/season/' . $seasonId);
+    }
+
 }
